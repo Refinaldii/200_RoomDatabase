@@ -12,6 +12,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
                     context,
                     klass = DatabaseSiswa::class.java,
                     name = "siswa_database")
+                    .build().also { Instance = it }
             }
         }
     }
