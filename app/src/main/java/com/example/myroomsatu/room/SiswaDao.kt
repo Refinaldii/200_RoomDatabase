@@ -6,4 +6,6 @@ import androidx.room.Dao
 interface SiswaDao {
     @Query(value = "SELECT * FROM tblSiswa ORDER BY nama ASC")
     fun getAllSiswa(): Flow<List<Siswa>>
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
 }
