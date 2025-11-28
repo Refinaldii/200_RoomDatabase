@@ -9,6 +9,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
         fun getDatabase(context: Context): DatabaseSiswa {
             return (Instance ?: synchronized(lock = this) {
                 Room.databaseBuilder(
+                    context,
             }
         }
     }
