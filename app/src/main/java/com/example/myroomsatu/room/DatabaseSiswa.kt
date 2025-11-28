@@ -11,6 +11,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
                 Room.databaseBuilder(
                     context,
                     klass = DatabaseSiswa::class.java,
+                    name = "siswa_database")
             }
         }
     }
