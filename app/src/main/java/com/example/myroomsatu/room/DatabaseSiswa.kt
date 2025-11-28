@@ -6,6 +6,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
     companion object {
         @Volatile
         private var Instance: DatabaseSiswa? = null
+        fun getDatabase(context: Context): DatabaseSiswa {
     }
 }
 
