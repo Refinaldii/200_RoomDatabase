@@ -10,6 +10,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
             return (Instance ?: synchronized(lock = this) {
                 Room.databaseBuilder(
                     context,
+                    klass = DatabaseSiswa::class.java,
             }
         }
     }
