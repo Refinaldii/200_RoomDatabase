@@ -8,6 +8,8 @@ abstract class DatabaseSiswa : RoomDatabase() {
         private var Instance: DatabaseSiswa? = null
         fun getDatabase(context: Context): DatabaseSiswa {
             return (Instance ?: synchronized(lock = this) {
+                Room.databaseBuilder(
+            }
         }
     }
 }
